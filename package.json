@@ -1,0 +1,10 @@
+{
+  "name": "my-blog",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "A-Tang",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  }
+}
