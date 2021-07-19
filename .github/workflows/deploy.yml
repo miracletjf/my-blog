@@ -44,4 +44,4 @@ jobs:
           # 用户
           REMOTE_USER: "root"
           # 目标地址
-          TARGET: "/root/www/my-blog"
+          TARGET: "/home/www/my-blog"
