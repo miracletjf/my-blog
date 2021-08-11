@@ -5,6 +5,11 @@ module.exports = {
   description: 'Just playing around',
   themeConfig: {
     logo: 'hero.png',
+    nav: [
+      { text: 'Home', link: '/' },
+      { text: 'Guide', link: '/guide/' },
+      { text: 'External', link: 'https://google.com' },
+    ]
   },
   configureWebpack: {
     resolve: {
