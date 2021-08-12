@@ -5,16 +5,33 @@ module.exports = {
   description: 'Just playing around',
   themeConfig: {
     logo: 'hero.png',
+    // navbar: false,  // 禁用导航条
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' },
-      { text: 'External', link: 'https://google.com' },
+      { text: 'TypeScript', link: '/typescript/' },
+      { text: 'Node', link: '/node/' },
+      // { text: 'Dropdown',  items: [
+      //   { text: 'xxx', link: 'xxx' },
+      //   { text: 'items', items: [
+      //     { text: 'ccc', link: 'ccc' },
+      //     { text: 'vvv', link: 'vvv' },
+      //     { text: 'xxx', link: 'xxx' },
+      //   ]},
+      //   { text: 'zzz', link: 'zzz' },
+      // ]}
+      // { text: 'GitHub', link: '' }
+    ],
+    displayAllHeaders: true,
+    sidebar: [
+      '/node/',
+      '/typescript/',
+      ['/vue/', 'Explicit link text']
     ]
   },
   configureWebpack: {
     resolve: {
       alias: {
-        '@images': path.join(__dirname, 'assets/images')
+        '@images': path.resolve('src/assets/images')
       }
     }
   }
