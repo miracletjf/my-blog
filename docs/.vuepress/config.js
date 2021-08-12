@@ -65,6 +65,8 @@ module.exports = {
     // searchMaxSuggestions: 10,
     // 最后更新时间
     lastUpdated: '更新时间',
+    // 页面滚动效果
+    smoothScroll: true,
   },
   configureWebpack: {
     resolve: {
