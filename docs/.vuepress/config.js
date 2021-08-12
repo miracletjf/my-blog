@@ -5,7 +5,8 @@ module.exports = {
   description: 'Just playing around',
   themeConfig: {
     logo: '/hero.png',
-    // navbar: false,  // 禁用导航条
+    // 导航栏
+    // navbar: false,  // 禁用导航栏
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Node', link: '/node/' },
@@ -22,6 +23,7 @@ module.exports = {
       // ]}
       // { text: 'GitHub', link: '' }
     ],
+    // 侧边栏
     // displayAllHeaders: true,
     sidebar: {
       '/node/': [{
@@ -57,7 +59,10 @@ module.exports = {
           ['/vue/', 'VUE']
         ]
       }],
-    }
+    },
+    //  搜索框
+    // search: false,
+    // searchMaxSuggestions: 10
   },
   configureWebpack: {
     resolve: {
