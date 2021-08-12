@@ -9,6 +9,7 @@
   "author": "A-Tang",
   "license": "MIT",
   "devDependencies": {
+    "moment": "^2.29.1",
     "vuepress": "^1.8.2",
     "watchpack": "^2.2.0"
   }

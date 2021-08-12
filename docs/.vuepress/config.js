@@ -62,7 +62,9 @@ module.exports = {
     },
     //  搜索框
     // search: false,
-    // searchMaxSuggestions: 10
+    // searchMaxSuggestions: 10,
+    // 最后更新时间
+    lastUpdated: '更新时间',
   },
   configureWebpack: {
     resolve: {
@@ -70,5 +72,18 @@ module.exports = {
         '@images': path.resolve('src/assets/images')
       }
     }
-  }
+  },
+  plugins: [
+    [
+      '@vuepress/last-updated', {
+        transformer: (timestamp, lang) => {
+          console.log(lang)
+          // 不要忘了安装 moment
+          const moment = require('moment')
+          moment.locale(lang)
+          return moment(timestamp).fromNow()
+        }
+      }
+    ]
+  ]
 }
