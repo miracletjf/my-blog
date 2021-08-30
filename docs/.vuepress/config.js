@@ -4,7 +4,7 @@ module.exports = {
   title: 'Hello VuePress',
   description: 'Just playing around',
   themeConfig: {
-    logo: '/hero.png',
+    logo: '/owl.png',
     // 导航栏
     // navbar: false,  // 禁用导航栏
     nav: [
